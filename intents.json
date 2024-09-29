@@ -1,0 +1,19 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": ["Hi", "How are you?", "Is anyone there?", "Hello", "Good day"],
+      "responses": ["Hello!", "Hi!", "Greetings!", "How can I assist you?"]
+    },
+    {
+      "tag": "order_status",
+      "patterns": ["Can I check my order?", "Where's my food?", "Order status"],
+      "responses": ["Your order is on its way!", "You can track your order via the app."]
+    },
+    {
+      "tag": "menu",
+      "patterns": ["What's on the menu?", "Show me the menu", "Menu"],
+      "responses": ["Our menu includes burgers, fries, beverages, and more."]
+    }
+  ]
+}
