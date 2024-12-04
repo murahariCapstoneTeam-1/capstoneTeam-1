@@ -1,7 +1,6 @@
 {
   "intents": [
     {
-<<<<<<< HEAD
       "tag": "fallback",
       "patterns": [ ],
       "responses": [
