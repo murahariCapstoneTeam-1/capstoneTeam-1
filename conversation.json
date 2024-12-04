@@ -1,0 +1,75 @@
+{
+    "conversation": [
+      {
+        "question": "What are the current promotions?",
+        "answer": "Check our website for the latest promotions and deals at McDonald's!"
+      },
+      {
+        "question": "Where can I find the nearest McDonald's?",
+        "answer": "You can use the McDonald's store locator on our website to find the nearest location!"
+      }
+    ]
+  },{
+    "question": "Hi",
+    "answer": "I do not understand..."
+},
+{
+    "question": "What are the current promotions?",
+    "answer": "I do not understand..."
+},
+{
+    "question": "Hi",
+    "answer": "Hi, how can I help?"
+},
+{
+    "question": "offers",
+    "answer": "Hello! How can I help you with McDonald's today?"
+},
+{
+    "question": "promotions",
+    "answer": "I do not understand..."
+},
+{
+    "question": "Do you have any current offers?",
+    "answer": "Check our website for the latest promotions and deals at McDonald's!"
+},
+{
+    "question": "any current offers?",
+    "answer": "We often have special offers! Please visit the promotions section on our website."
+},
+{
+    "question": "Is anyone there?",
+    "answer": "Hi, what can I do for you?"
+},
+{
+    "question": "Is anyone there?",
+    "answer": "Hi, what can I do for you?"
+},
+{
+    "question": "Hello",
+    "answer": "Hey :-)"
+},
+{
+    "question": "Bye",
+    "answer": "Hi, what can I do for you?"
+},
+{
+    "question": "bye",
+    "answer": "Hey :-)"
+},
+{
+    "question": "Bye",
+    "answer": "Hi, what can I do for you?"
+},
+{
+    "question": "bye",
+    "answer": "Hello, thanks for visiting"
+},
+{
+    "question": "Hi",
+    "answer": "Hello! How can I help you with McDonald's today?"
+},
+{
+    "question": "Order details",
+    "answer": "Hi, what can I do for you?"
+},

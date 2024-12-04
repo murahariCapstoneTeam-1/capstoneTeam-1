@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <meta charset="UTF-8">
+    <title>McAssist</title>
+    <style>
+        /* General body styling */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fffbe6;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Navbar styling */
+        nav {
+            background-color: #ffd700;
+            color: #333;
+            padding: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 1.2em;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Navbar links and button styling */
+        nav a, .nav-button, .btn {
+            color: #333;
+            text-decoration: none;
+            margin: 0 10px;
+            padding: 10px 15px;
+            transition: background-color 0.3s ease;
+            border-radius: 5px;
+            border: none;
+            cursor: pointer;
+        }
+
+        nav a:hover, .nav-button:hover, .btn:hover {
+            background-color: #ffda66;
+        }
+
+        /* Welcome text styling */
+        nav span {
+            font-weight: bold;
+            color: #333;
+        }
+
+        /* Main content area styling */
+        main {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        /* Font and spacing adjustments for main content */
+        main h1, main h3 {
+            color: #333;
+            font-family: 'Arial Black', sans-serif;
+            margin-bottom: 10px;
+        }
+        main h2 {
+            color: #DA291C; /* McDonald's red */
+            font-family: 'Arial Black', sans-serif;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="{{ url_for('index') }}" class="nav-button">Home</a>
+        {% if session['user_id'] %}
+            <span>Welcome, {{ session['username'] }}</span>
+            <a href="{{ url_for('home') }}" class="nav-button">Continue to Chatting</a>
+            <button onclick="location.href='{{ url_for('logout') }}'" class="nav-button">Logout</button>
+        {% else %}
+            <button onclick="location.href='{{ url_for('login') }}'" class="nav-button">Login</button>
+        {% endif %}
+    </nav>
+
+    {% if request.endpoint not in ['login', 'register'] %}
+    <main>
+        {% block content %}
+        <!-- Example content block with button -->
+        <h2>Welcome to McAssist</h2>
+        <p>Enjoy the convenience of getting assistance anytime!</p>
+        <button onclick="location.href='{{ url_for('login') }}'" class="btn">Explore Features</button>
+        {% endblock %}
+    </main>
+    {% endif %}
+</body>
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% include 'base.html' %}
+    <title>Welcome to McAssist</title>
+    <style>
+        /* General body styling */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fffbe6;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        /* Header styling */
+        h2 {
+            color: #DA291C;
+            font-size: 2em;
+            font-family: 'Arial Black', sans-serif;
+            margin-top: 30px;
+        }
+
+        /* Container for user options */
+        .user-options {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 20px;
+        }
+
+        /* Button and link styling */
+        .btn, .user-options a {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #ffc72c;
+            color: #333;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+            border: none;
+        }
+
+        .btn:hover, .user-options a:hover {
+            background-color: #ffda66;
+        }
+
+        /* Adjust button text */
+        p {
+            margin: 15px 0;
+            font-size: 1.1em;
+        }
+        .user-options {
+    display: flex;
+    gap: 20px; /* Adds space between each text-button pair */
+    align-items: center; /* Aligns items vertically */
+    font-family: Arial, sans-serif;
+}
+
+.user-options .btn {
+    padding: 8px 16px;
+    background-color: #FFC72C; /* McDonald's yellow */
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.user-options .btn:hover {
+    background-color: #FFCC00; /* Slightly darker yellow for hover effect */
+}
+/* Navbar links and button styling */
+        nav a, .nav-button, .btn {
+            color: #333;
+            text-decoration: none;
+            margin: 0 10px;
+            padding: 10px 15px;
+            transition: background-color 0.3s ease;
+            border-radius: 5px;
+            border: none;
+            cursor: pointer;
+        }
+
+        nav a:hover, .nav-button:hover, .btn:hover {
+            background-color: #ffda66;
+        }
+    </style>
+</head>
+<body>
+    <div class="user-options">
+        <div>Existing User? <a href="{{ url_for('login') }}" class="btn">Login</a></div>
+        <div>New User? <a href="{{ url_for('register') }}" class="btn">Register</a></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,802 @@
+{
+  "intents": [
+    {
+      "tag": "fallback",
+      "patterns": [ ],
+      "responses": [
+          "I'm sorry, I didn't quite understand that. Could you rephrase?",
+          "Hmm, I'm not sure how to respond to that. Can you ask something else?",
+          "I don't have an answer for that right now. Can I help with anything else?"
+      ]
+    },
+    {
+      "tag": "order_mcdelivery_using_app",
+      "patterns": [
+          "How can I order McDelivery using the McDonalds app",
+          "How do I place a delivery order in the McDonalds app",
+          "How to order delivery in McDonalds app"
+      ],
+      "responses": [
+          "Select Order from the bottom menu bar and switch from Pickup to McDelivery. Enter the desired address for delivery and you will be notified if McDelivery is available to you. Once confirmed, start creating your order from our menu or your saved favorites. When youre all set follow the checkout process in the app sit back and enjoy your faves when they arrive."
+      ]
+    },
+    {
+        "tag": "is_mcdelivery_available",
+        "patterns": [
+            "How do I know if McDelivery is available to my address",
+            "Is McDelivery available in my area",
+            "How can I check McDelivery availability"
+        ],
+        "responses": [
+            "Launch the McDonalds app and log in if you are not already. Select Order from the bottom menu bar and switch from Pickup to McDelivery. Enter your desired delivery address and you will be notified if McDelivery is available to you."
+        ]
+    },
+    {
+        "tag": "available_items_mc_delivery",
+        "patterns": [
+            "How do I know what items are available for McDelivery",
+            "What menu items can I get with McDelivery",
+            "Which items are available for delivery"
+        ],
+        "responses": [
+            "Menu items will vary by location. For food item availability please select McDelivery in the McDonalds app and view items by selecting Order on the bottom menu bar."
+        ]
+    },
+    {
+        "tag": "report_problem_mcdelivery",
+        "patterns": [
+            "How do I report a problem with my McDonalds McDelivery order",
+            "I had an issue with my McDelivery order",
+            "How to report delivery issues"
+        ],
+        "responses": [
+            "To report and resolve any issues first identify who was handling your delivery Uber Eats or DoorDash. Check the bottom of the receipt in your email to find out the vendor. Please contact Uber Eats at 8669873744 or DoorDash at 8335100332."
+        ]
+    },
+    {
+        "tag": "why_uber_eats",
+        "patterns": [
+            "Why does it say powered by Uber Eats",
+            "What does powered by Uber Eats mean",
+            "Why is Uber Eats mentioned for delivery"
+        ],
+        "responses": [
+            "We have partnered with Uber Eats to deliver your faves to you. We take care of the food Uber Eats handles the delivery."
+        ]
+    },
+    {
+        "tag": "why_doordash_",
+        "patterns": [
+            "Why does it say powered by DoorDash",
+            "What does powered by DoorDash mean",
+            "Why is DoorDash mentioned for delivery"
+        ],
+        "responses": [
+            "We have partnered with DoorDash to deliver your faves to you. We take care of the food DoorDash handles the delivery."
+        ]
+    },
+    {
+        "tag": "dashpass_or_uberone",
+        "patterns": [
+            "I have DashPass or Uber One Will those benefits apply to my order",
+            "Does DashPass or Uber One work for McDelivery orders",
+            "Will I get DashPass or Uber One benefits"
+        ],
+        "responses": [
+            "DashPass benefits only apply to orders through the DoorDash app and Uber One benefits only apply to orders through the Uber Eats app."
+        ]
+    },
+    {
+        "tag": "why_pay_for_delivery",
+        "patterns": [
+            "I have DashPass or Uber One why did I pay for delivery",
+            "Why am I charged delivery if I have DashPass or Uber One",
+            "Why was delivery not free with my membership"
+        ],
+        "responses": [
+            "DashPass benefits only apply to orders through the DoorDash app and Uber One benefits only apply to orders through the Uber Eats app."
+        ]
+    },
+    {
+        "tag": "menu_exclusions_",
+        "patterns": [
+            "Are any McDonalds menu items not available for McDelivery",
+            "What items are excluded from McDelivery",
+            "Which menu items are not delivered"
+        ],
+        "responses": [
+            "The McDonalds delivery menu includes the full McDonalds menu with the exception of soft serve cones. Other exclusions may apply."
+        ]
+    },
+    {
+        "tag": "redeem_rewards_mcdelivery",
+        "patterns": [
+            "Can I redeem MyMcDonalds Rewards when ordering McDelivery",
+            "How to use MyMcDonalds Rewards for delivery",
+            "Can I use rewards for McDelivery orders"
+        ],
+        "responses": [
+            "Yup MyMcDonalds Rewards can be redeemed on delivery orders. Simply select the reward you wish to redeem and select Add to McDelivery order."
+        ]
+    },
+    {
+        "tag": "earn_rewards_mcdelivery",
+        "patterns": [
+            "Will I earn MyMcDonalds Rewards points for eligible purchases made via McDelivery",
+            "Do McDelivery orders earn MyMcDonalds Rewards points",
+            "Can I get points for McDelivery orders"
+        ],
+        "responses": [
+            "You betcha If you have opted into the MyMcDonalds Rewards program all eligible food and beverages purchased through the McDonalds app earn points that you can redeem for free food."
+        ]
+    },
+    {
+        "tag": "where_are_rewards_points",
+        "patterns": [
+            "Where are my MyMcDonalds Rewards points",
+            "Why dont I see my points after McDelivery",
+            "How long does it take to get points for delivery orders"
+        ],
+        "responses": [
+            "All eligible delivery orders via the McDonalds app earn you points. Points will be deposited into your account 48 hours after your order is delivered and complete."
+        ]
+    },
+  {
+        "tag": "delivery_fees",
+        "patterns": [
+            "What is a delivery fee",
+            "How much is the delivery fee for McDelivery",
+            "What does delivery fee mean"
+        ],
+        "responses": [
+            "This fee helps cover delivery costs. The amount varies for each restaurant based on things like your location and availability of nearby couriers."
+        ]
+    },
+    {
+        "tag": "retail_delivery_fee",
+        "patterns": [
+            "What is a retail delivery fee",
+            "Why am I charged a retail delivery fee",
+            "What does retail delivery fee mean"
+        ],
+        "responses": [
+            "This is a fee imposed on deliveries by your state or local government."
+        ]
+    },
+    {
+        "tag": "service_fee",
+        "patterns": [
+            "What is a service fee",
+            "Why is there a service fee",
+            "How is service fee calculated"
+        ],
+        "responses": [
+            "We charge a service fee on each order. This fee is calculated as a percentage of the order subtotal."
+        ]
+    },
+    {
+        "tag": "small_order_fee",
+        "patterns": [
+            "What is a small order fee",
+            "Why is there a small order fee",
+            "How can I avoid small order fee"
+        ],
+        "responses": [
+            "We charge this fee on orders with a subtotal below a certain amount. You can remove the fee by adding more items."
+        ]
+    },
+    {
+        "tag": "undelivered_order",
+        "patterns": [
+            "My order was not delivered",
+            "What do I do if my order was not delivered",
+            "I didnt get my McDelivery order"
+        ],
+        "responses": [
+            "We are sorry we could not get you your order. To report and resolve any issues first identify who was handling your delivery Uber Eats or DoorDash. Check the bottom of the receipt in your email to find out the vendor. Please contact Uber Eats at 8669873744 or DoorDash at 8335100332."
+        ]
+    },
+    {
+        "tag": "incorrect_order",
+        "patterns": [
+            "My order is not correct or is missing items",
+            "What do I do if my delivery order is wrong",
+            "How to report incorrect or missing delivery items"
+        ],
+        "responses": [
+            "We are sorry about your order. To report and resolve any issues first identify who was handling your delivery Uber Eats or DoorDash. Check the bottom of the receipt in your email to find out the vendor. Please contact Uber Eats at 8669873744 or DoorDash at 8335100332."
+        ]
+    },
+    {
+        "tag": "courier_issue",
+        "patterns": [
+            "I had an issue with my courier",
+            "What do I do if there is a problem with my courier",
+            "How to report a courier issue"
+        ],
+        "responses": [
+            "We are sorry about your experience. To report and resolve any issues first identify who was handling your delivery Uber Eats or DoorDash. Check the bottom of the receipt in your email to find out the vendor. Please contact Uber Eats at 8669873744 or DoorDash at 8335100332."
+        ]
+    },
+    {
+        "tag": "modify_order",
+        "patterns": [
+            "I want to change my order or add items to my order",
+            "How can I modify an order I already placed",
+            "Can I add items to an existing order"
+        ],
+        "responses": [
+            "Once an order is placed it cannot be modified. You may be able to cancel the order. To cancel your order first identify whos handling your delivery Uber Eats or DoorDash. From the home screen select Track Order and scroll down to the tracking screen to find out. Then contact Uber Eats at 8669873744 or DoorDash at 8335100332. Once cancelled you can place a new order."
+        ]
+    },
+    {
+        "tag": "cancel_order",
+        "patterns": [
+            "I want to cancel my order",
+            "How do I cancel my order",
+            "Can I cancel my delivery order"
+        ],
+        "responses": [
+            "First identify whos handling your delivery Uber Eats or DoorDash. From the home screen select Track Order and scroll down to the tracking screen to find out. To cancel contact Uber Eats at 8669873744 or DoorDash at 8335100332."
+        ]
+    },
+    {
+        "tag": "contact_courier",
+        "patterns": [
+            "I need to contact my courier",
+            "How can I contact the courier",
+            "How do I reach out to the driver"
+        ],
+        "responses": [
+            "From the home screen select Track Order and scroll down to the tracking screen to contact your courier. You will only be able to contact your driver once one is assigned. Keep in mind that your courier may be driving and may not be able to answer the phone right away. Your courier is also able to contact you if they are unable to easily find your delivery address."
+        ]
+    },
+    {
+        "tag": "delivery_address_change",
+        "patterns": [
+            "I need to change my delivery address",
+            "Can I update my delivery address",
+            "How to modify my delivery address"
+        ],
+        "responses": [
+            "First identify whos handling your delivery Uber Eats or DoorDash. From the home screen select Track Order and scroll down to the tracking screen to find out. To change your address contact Uber Eats at 8669873744 or DoorDash at 8335100332."
+        ]
+    },
+    {
+        "tag": "delivery_status",
+        "patterns": [
+            "Where can I find the status of my delivery order",
+            "How do I check my delivery status",
+            "Where is my order"
+        ],
+        "responses": [
+            "From the home screen select Track Order to get an up to date status of your delivery order."
+        ]
+    },
+    {
+        "tag": "long_delivery",
+        "patterns": [
+            "My order is taking longer than expected",
+            "What do I do if my order is late",
+            "Why is my delivery delayed"
+        ],
+        "responses": [
+            "We are sorry we could not get you your order on time. To report and resolve any issues first identify whos handling your delivery Uber Eats or DoorDash. From the home screen select Track Order and scroll down to the tracking screen to find out. Please contact Uber Eats at 8669873744 or DoorDash at 8335100332."
+        ]
+    },
+    {
+        "tag": "general_query",
+        "patterns": [
+            "Have a question thats not listed here",
+            "What if my question is not covered",
+            "How can I ask a different question"
+        ],
+        "responses": [
+            "First identify whos handling your delivery Uber Eats or DoorDash. From the home screen select Track Order and scroll down to the tracking screen to find out. For any further questions contact Uber Eats at 8669873744 or DoorDash at 8335100332."
+        ]
+    },
+  {
+  "tag": "does_mcdonalds_deliver",
+  "patterns": [
+    "Does McDonald's deliver",
+    "Can I get McDonald's delivered",
+    "Is McDonald's delivery available"
+  ],
+  "responses": [
+    "You can order McDonald’s for delivery and have your pick from the McDonald’s menu when you order on Uber Eats, DoorDash, or Grubhub."
+  ]
+  },
+  {
+  "tag": "what_is_doordash",
+  "patterns": [
+    "What is the DoorDash app",
+    "Explain DoorDash",
+    "Tell me about DoorDash"
+  ],
+  "responses": [
+    "DoorDash is a technology company that connects customers with their favorite local and national businesses in more than 4,000 cities and all 50 states across the United States, Canada and Australia. You can get McDonald’s delivery on DoorDash through McDelivery!"
+  ]
+  },
+  {
+  "tag": "what_is_grubhub",
+  "patterns": [
+    "What is the Grubhub app",
+    "Explain Grubhub",
+    "Tell me about Grubhub"
+  ],
+  "responses": [
+    "Grubhub is a leading online food delivery marketplace and features more than 320,000 restaurant partners in over 4,000 U.S. cities. You can order the food you crave with McDelivery on Grubhub."
+  ]
+  },
+  {
+  "tag": "what_is_uber_eats",
+  "patterns": [
+    "What is Uber Eats",
+    "Explain Uber Eats",
+    "Tell me about Uber Eats"
+  ],
+  "responses": [
+    "Uber Eats is the platform that makes ordering food on the app as simple as requesting a ride with Uber. You can order your favorite foods with McDelivery on Uber Eats."
+  ]
+  },
+  {
+  "tag": "cancel_mcdelivery_order",
+  "patterns": [
+    "How can I cancel my McDelivery order",
+    "Can I cancel my McDelivery order",
+    "Cancel McDelivery order"
+  ],
+  "responses": [
+    "To cancel your order, you’ll need to do this on the Uber Eats, DoorDash, or Grubhub app or website where you placed the order. The app or website you placed your order on will have instructions for the cancellation process."
+  ]
+  },
+  {
+  "tag": "mcdelivery_minimum_order",
+  "patterns": [
+    "Is there a McDelivery minimum order amount",
+    "What is the minimum order for McDelivery",
+    "Minimum order amount for McDelivery"
+  ],
+  "responses": [
+    "There is no minimum order amount, but delivery fees may apply, including a small order fee. In some cases there may be McDonald's promotions which may require a minimum spend to qualify for the promotion."
+  ]
+  },
+  {
+  "tag": "delivery_cost",
+  "patterns": [
+    "How much does it cost to get McDonald's delivered",
+    "What are the delivery fees for McDonald's",
+    "How much is McDelivery"
+  ],
+  "responses": [
+    "The fees associated with delivery can vary, and prices for items ordered via delivery may be higher than at restaurants. Please check the Uber Eats, DoorDash, or Grubhub app or website to learn more about applicable fees associated with delivery."
+  ]
+  },
+  {
+  "tag": "mcdelivery_locations",
+  "patterns": [
+    "How do I find out which McDonald's restaurants are participating in McDelivery",
+    "Which locations offer McDelivery",
+    "What McDonald's restaurants participate in McDelivery"
+  ],
+  "responses": [
+    "To determine which McDonald's locations in your area are participating in McDelivery, simply download the Uber Eats App, DoorDash App, or the Grubhub App, input your delivery address, and you will be able to order from participating McDonald's restaurants in your area. Changing the delivery address will also change the available McDonald's restaurants."
+  ]
+  },
+  {
+  "tag": "is_mcdelivery_safe",
+  "patterns": [
+    "Is McDelivery safe",
+    "How do I know if the McDelivery driver is legitimate",
+    "Is the McDelivery driver real"
+  ],
+  "responses": [
+    "You can use the Uber Eats, DoorDash, or Grubhub app to track your delivery—check the platform you used to place your order."
+  ]
+  },
+  {
+  "tag": "report_mcdelivery_issue",
+  "patterns": [
+    "How do I report a problem with my McDonald's order",
+    "What if I have an issue with my McDelivery order",
+    "Report a problem with McDelivery"
+  ],
+  "responses": [
+    "To investigate an issue with a McDelivery order and take appropriate steps, we suggest that you contact Uber Eats customer service directly through the Uber Eats App, DoorDash customer service directly through the DoorDash App, or Grubhub customer service directly through the Grubhub App."
+  ]
+  },
+  {
+  "tag": "promotion_not_applied",
+  "patterns": [
+    "My promotion or discount was not applied",
+    "Why was my McDelivery promotion not applied",
+    "Promotion issue with McDelivery"
+  ],
+  "responses": [
+    "We’re sorry about that. To review your receipt with a customer service representative, first identify who was handling your delivery—Uber Eats, DoorDash, or Grubhub. Check the bottom of the receipt in your email to find out the vendor. Please contact Uber Eats at 866-987-3744, DoorDash at 833-510-0332, or Grubhub at 877-866-4482."
+  ]
+  },
+  {
+      "tag": "acknowledge",
+      "patterns": [
+        "Okay",
+        "Alright",
+        "Got it"
+      ],
+      "responses": [
+        "Great! How can I assist you further?",
+        "Got it! What's next?",
+        "Okay, let me know if you need anything else."
+      ]
+    },
+    {
+      "tag": "about_food",
+      "patterns": [
+        "Tell me about your food",
+        "What should I know about McDonald's food?",
+        "Is there any info on your food quality?",
+        "What’s special about McDonald's food?",
+        "Can you tell me more about your food?",
+        "About your food",
+        "Give me details on your food",
+        "What are your food standards?",
+        "Do you care about food quality?",
+        "What do you offer in terms of food quality?"
+      ],
+      "responses": [
+        "We’re passionate about our food! From adding more balanced options to our Happy Meal to serving fresh beef Quarter Pounder burgers cooked when you order, we're always finding ways to show our commitment to our customers and our food.",
+        "Our food quality is a priority, with efforts to add balanced options and ensure fresh beef in Quarter Pounders cooked when you order. We're committed to high standards for every meal!",
+        "McDonald's is committed to quality in all aspects of our food, from balanced Happy Meal options to fresh beef in Quarter Pounders that’s cooked upon order."
+      ],
+      "context": ""
+    },
+    {
+      "tag": "app_download",
+      "patterns": [
+        "How can I order in the app?",
+        "Tell me about the McDonald's app",
+        "Where can I download your app?",
+        "How do I get the app?",
+        "Order in app",
+        "Download the app",
+        "Get McDonald's app",
+        "App download link",
+        "Get app on Google Play",
+        "Download from App Store",
+        "Play Store link",
+        "App Store link"
+      ],
+      "responses": [
+        "You can download the McDonald's app from Google Play here: https://play.google.com/store/apps/details?id=com.mcdonalds.app&hl=en&pli=1 and from the App Store here: https://apps.apple.com/us/app/mcdonalds/id922103212. Enjoy easy ordering and deals on the app!",
+        "For easy ordering, you can download the McDonald's app: Google Play - https://play.google.com/store/apps/details?id=com.mcdonalds.app&hl=en&pli=1 or App Store - https://apps.apple.com/us/app/mcdonalds/id922103212.",
+        "Download the McDonald's app for easy ordering and deals! Google Play: https://play.google.com/store/apps/details?id=com.mcdonalds.app&hl=en&pli=1. App Store: https://apps.apple.com/us/app/mcdonalds/id922103212."
+      ],
+      "context": ""
+    },
+    {
+      "tag": "greeting",
+      "patterns": [
+        "Hi",
+        "Hey",
+        "How are you?",
+        "Is anyone there?",
+        "Hello",
+        "Good morning",
+        "Good afternoon",
+        "Good evening",
+        "Hello McDonald's",
+        "Hi McDonald's chatbot",
+        "How's it going?",
+        "Hey there"
+      ],
+      "responses": [
+        "Hello! How can I help you with McDonald's today?",
+        "Hi there! What do you want to know about McDonald's?",
+        "Hey! How can I assist you?",
+        "Hello, thanks for visiting. How can I make your day better?",
+        "Hi, what can I do for you?",
+        "Hi, how can I help?"
+      ],
+      "context": ""
+    },
+    {
+      "tag": "location_query",
+      "patterns": [
+        "Where's the nearest McDonald's?",
+        "Find a McDonald's near me",
+        "Show me nearby McDonald's locations",
+        "Locate a McDonald's",
+        "Is there a McDonald's nearby?",
+        "Where can I find McDonald's?",
+        "How do I locate the closest McDonald's?",
+        "Directions to McDonald's",
+        "Any McDonald's close to me?",
+        "Can you help me find a McDonald's?",
+        "How do I find a McDonald's?"
+      ],
+      "responses": [
+        "You can find your nearest McDonald's location here: https://www.mcdonalds.com/us/en-us/restaurant-locator.html",
+        "Here's a link to locate your nearest McDonald's: https://www.mcdonalds.com/us/en-us/restaurant-locator.html",
+        "To find a McDonald's near you, visit: https://www.mcdonalds.com/us/en-us/restaurant-locator.html",
+        "Find the closest McDonald's location using our locator: https://www.mcdonalds.com/us/en-us/restaurant-locator.html"
+      ],
+      "context": ["location_directions"]
+    },
+    {
+      "tag": "location_directions",
+      "patterns": [
+        "Can you give me directions?",
+        "How do I get there?",
+        "What's the best way to get there?",
+        "Can I get directions to the nearest McDonald's?",
+        "How do I navigate to McDonald's?",
+        "Give me directions to McDonald's",
+        "Is there a route to McDonald's?",
+        "Tell me how to reach McDonald's"
+      ],
+      "responses": [
+        "Please use the McDonald's restaurant locator to find directions: https://www.mcdonalds.com/us/en-us/restaurant-locator.html",
+        "You can get detailed directions by using our locator here: https://www.mcdonalds.com/us/en-us/restaurant-locator.html",
+        "For accurate directions, visit our locator and enter your location: https://www.mcdonalds.com/us/en-us/restaurant-locator.html"
+      ],
+      "context": ""
+    },
+    {
+      "tag": "meal_deals",
+      "patterns": [
+        "Tell me about meal deals",
+        "What meal deals do you have?",
+        "Do you have any special meal deals?",
+        "What combos are available?",
+        "Do you offer any discount combos?",
+        "Can I see your meal deals?"
+      ],
+      "responses": [
+        "We offer several Meal Deals! For example, the 2 for $6 Mix & Match deal lets you pick two items from options like the Big Mac, Filet-O-Fish, 10 pc. Chicken McNuggets, and Quarter Pounder with Cheese.",
+        "Our Meal Deals include popular combinations at special prices. You can enjoy deals like the 2 for $6 Mix & Match or other limited-time offers!",
+        "Yes! Check out our special Meal Deals like the 2 for $6 Mix & Match. Choose from fan favorites like the Big Mac and Quarter Pounder with Cheese.",
+        "Our Meal Deals give you a choice of favorites like the Big Mac and Chicken McNuggets at a great price! Check with us for the latest offers."
+      ]
+    },
+    {
+      "tag": "breakfast",
+      "patterns": [
+        "Tell me about breakfast options",
+        "What do you have for breakfast?",
+        "Any breakfast items?",
+        "What's on the breakfast menu?",
+        "Do you serve breakfast?",
+        "What breakfast foods are available?",
+        "Can I get breakfast here?"
+      ],
+      "responses": [
+        "Our breakfast menu includes classics like the Egg McMuffin, Sausage McMuffin, Hotcakes, Bacon, Egg & Cheese Biscuit, and more. Breakfast is available until 10:30 am.",
+        "Yes, we have breakfast options like Egg McMuffins, Hotcakes, Sausage Burritos, and more, served until 10:30 am.",
+        "You can enjoy breakfast items such as Hotcakes, Sausage McMuffins, and our Bacon, Egg & Cheese Biscuit until 10:30 am.",
+        "Our breakfast menu offers favorites like Hotcakes, Egg McMuffins, and Hash Browns, but be sure to visit before 10:30 am for these options."
+      ]
+    },
+    {
+      "tag": "burgers",
+      "patterns": [
+        "What burgers do you have?",
+        "Tell me about your burgers",
+        "Do you serve burgers?",
+        "Can I see your burger options?",
+        "What burger choices do you have?",
+        "Do you have any new burgers?",
+        "Tell me more about your burgers"
+      ],
+      "responses": [
+        "We have a variety of burgers like the Big Mac, Quarter Pounder with Cheese, Double Quarter Pounder with Cheese, Cheeseburger, and Double Cheeseburger. Our burgers are made with 100% fresh beef.",
+        "Our burgers include classics like the Big Mac, Quarter Pounder with Cheese, and Cheeseburger. Each is made with fresh beef and served hot and juicy!",
+        "From the Big Mac to the Double Cheeseburger, our burgers are made with quality ingredients and 100% fresh beef. Try one today!",
+        "Yes! We offer burgers such as the Quarter Pounder, Big Mac, and Double Cheeseburger, all made with fresh beef and great flavor."
+      ]
+    },
+    {
+      "tag": "chicken_fish",
+      "patterns": [
+        "Do you have chicken sandwiches?",
+        "Tell me about fish sandwiches",
+        "Any chicken or fish items?",
+        "What chicken sandwiches do you have?",
+        "Do you offer fish sandwiches?",
+        "What are your chicken and fish options?",
+        "Can I order chicken or fish sandwiches?"
+      ],
+      "responses": [
+        "Our chicken and fish options include the McChicken, Spicy McChicken, Crispy Chicken Sandwich, Spicy Crispy Chicken Sandwich, Deluxe Crispy Chicken Sandwich, and the Filet-O-Fish.",
+        "Yes, we offer a variety of chicken sandwiches like the McChicken and Crispy Chicken Sandwich, along with our classic Filet-O-Fish.",
+        "We have tasty chicken options such as the Crispy Chicken Sandwich and Spicy McChicken, and you can also enjoy our Filet-O-Fish!",
+        "Our chicken and fish options include sandwiches like the Crispy Chicken Sandwich and the Filet-O-Fish, perfect for any craving!"
+      ]
+    },
+    {
+      "tag": "mcnuggets",
+      "patterns": [
+        "Tell me about McNuggets",
+        "Do you have McNuggets?",
+        "I want to order McNuggets",
+        "What McNuggets sizes do you have?",
+        "Are McNuggets available?",
+        "What sauces are there for McNuggets?",
+        "Can I get chicken nuggets?"
+      ],
+      "responses": [
+        "Yes, we have McNuggets available in portions of 4, 6, 10, 20, and 40 pieces. Made with all-white meat chicken, they’re perfect for dipping with sauces like Tangy BBQ, Sweet & Sour, Spicy Buffalo, and Honey Mustard.",
+        "Our McNuggets come in various sizes and are made from all-white meat chicken. Try them with sauces like BBQ and Sweet & Sour.",
+        "McNuggets are a popular choice, available in different sizes and great for dipping with sauces like Honey Mustard and Tangy BBQ.",
+        "Yes! Our McNuggets come in sizes from 4 to 40 pieces, and you can enjoy them with sauces like Spicy Buffalo and Honey Mustard."
+      ]
+    },
+    {
+      "tag": "fries_sides",
+      "patterns": [
+        "What sides do you have?",
+        "Tell me about fries and sides",
+        "Any sides with the meals?",
+        "What are the side options?",
+        "Do you serve fries?",
+        "What sides can I get?",
+        "Do you have fries and sides?"
+      ],
+      "responses": [
+        "Our sides include World Famous Fries, Apple Slices, and options like Mozzarella Sticks and Side Salad. The fries are cooked to golden perfection and are a must-try!",
+        "Yes, we have sides such as World Famous Fries, Mozzarella Sticks, Apple Slices, and Side Salad.",
+        "You can enjoy sides like our iconic fries, Apple Slices, and Mozzarella Sticks with any meal!",
+        "We offer a variety of sides including fries, Apple Slices, and Mozzarella Sticks, perfect for pairing with any meal."
+      ]
+    },
+    {
+      "tag": "happy_meal",
+      "patterns": [
+        "Tell me about Happy Meals",
+        "Any options for kids?",
+        "What is in a Happy Meal?",
+        "Do you have Happy Meals?",
+        "What comes with a Happy Meal?",
+        "What’s in the kids' meal?",
+        "Do you serve meals for kids?"
+      ],
+      "responses": [
+        "A Happy Meal includes a main item like a Hamburger, 4-piece Chicken McNuggets, or a Cheeseburger, plus a side like fries or apple slices, a drink, and a toy. It’s a fun meal for kids!",
+        "Our Happy Meals come with a choice of main items like McNuggets or a Cheeseburger, a side, a drink, and a toy for kids.",
+        "Kids love our Happy Meals! They include items like a Cheeseburger, Chicken McNuggets, a side, a drink, and a toy.",
+        "Yes! Happy Meals come with a main item, a side, a drink, and a toy to make each meal special for kids."
+      ]
+    },
+    {
+      "tag": "sweets_treats",
+      "patterns": [
+        "Do you have desserts?",
+        "Tell me about sweets",
+        "Any treats available?",
+        "What desserts do you have?",
+        "What are the sweet options?",
+        "Can I get a dessert here?",
+        "What kind of treats do you serve?"
+      ],
+      "responses": [
+        "Our sweets and treats include the Soft Serve Cone, Hot Fudge Sundae, Apple Pie, Strawberry Shake, and McFlurry options like the Oreo McFlurry. Perfect for satisfying your sweet tooth!",
+        "Yes, we have desserts like Soft Serve Cones, Hot Fudge Sundaes, Apple Pies, and McFlurries!",
+        "Our dessert options include Apple Pie, Strawberry Shakes, and Oreo McFlurries. Something sweet for every craving!",
+        "For desserts, we offer choices like the Hot Fudge Sundae, Apple Pie, and Oreo McFlurry. Great for treating yourself!"
+      ]
+    },
+    {
+      "tag": "mccafe_coffees",
+      "patterns": [
+        "Do you have coffee?",
+        "Tell me about McCafé",
+        "What coffee options do you have?",
+        "Can I order coffee here?",
+        "What McCafé drinks are available?",
+        "What kind of coffee do you serve?",
+        "Do you have hot and iced coffee?"
+      ],
+      "responses": [
+        "McCafé offers a variety of coffee drinks including Premium Roast Coffee, Iced Coffee, Caramel Macchiato, Latte, and Mocha. Available in hot or iced options to suit your preference.",
+        "Yes, McCafé has drinks like Premium Roast Coffee, Iced Caramel Macchiato, and Latte. Try one of our delicious coffee options!",
+        "Our McCafé menu includes coffee choices like Iced Coffee, Caramel Macchiato, and Espresso drinks. Great hot or iced!",
+        "McCafé offers both hot and iced drinks including Caramel Macchiato, Latte, Mocha, and our Premium Roast Coffee."
+      ]
+    },
+    {
+      "tag": "beverages",
+      "patterns": [
+        "What drinks do you have?",
+        "Tell me about beverages",
+        "Any drinks available?",
+        "What are the drink options?",
+        "Do you serve beverages?",
+        "Can I get a drink here?",
+        "What drinks do you offer?",
+        "drinks"
+      ],
+      "responses": [
+        "Our beverages include Soft Drinks like Coca-Cola, Diet Coke, Sprite, and Fanta, as well as Iced Tea, Lemonade, Milk, and Orange Juice.",
+        "Yes, we offer drinks like Coca-Cola, Sprite, Fanta, Iced Tea, and Lemonade. Perfect for pairing with any meal.",
+        "We have a range of drinks including Coca-Cola, Diet Coke, Sprite, and refreshing options like Iced Tea and Lemonade.",
+        "Our drink options include soft drinks, iced tea, and juices. Great for refreshing yourself with any meal."
+      ]
+    },
+    {
+      "tag": "dollar_menu",
+      "patterns": [
+        "Tell me about the dollar menu",
+        "Any items for $1?",
+        "What is on the dollar menu?",
+        "What can I get for $1?",
+        "Do you have a dollar menu?",
+        "Can I see the dollar menu?",
+        "What’s on the $1 menu?",
+        "dollar options",
+        "dollar"
+      ],
+      "responses": [
+        "Our $1 $2 $3 Dollar Menu offers affordable items like the McChicken, Cheeseburger, Sausage Biscuit, and any size soft drink for just $1.",
+        "Yes! Our Dollar Menu includes items like the McChicken, Sausage Biscuit, and any size soft drink for $1.",
+        "The Dollar Menu has items at $1, $2, and $3, including options like the McChicken and Cheeseburger.",
+        "On the Dollar Menu, you can find items like the McChicken and Cheeseburger at affordable prices!"
+      ]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": [
+        "Goodbye",
+        "Bye",
+        "See you later",
+        "Catch you later",
+        "Talk to you soon",
+        "I'm leaving",
+        "Exit",
+        "Close chat"
+      ],
+      "responses": [
+        "Goodbye! Thanks for visiting McDonald's!",
+        "See you soon! Have a great day!",
+        "Bye! Looking forward to serving you again.",
+        "Thanks for chatting with us. Visit again!"
+      ],
+      "context": ""
+    },
+    {
+      "tag": "thanks",
+      "patterns": [
+        "Thanks",
+        "Thank you",
+        "Appreciate it",
+        "You're great",
+        "Much appreciated",
+        "Thanks a lot",
+        "Thank you very much"
+      ],
+      "responses": [
+        "You're very welcome!",
+        "Glad I could help!",
+        "Anytime! Happy to assist you.",
+        "You're welcome! Let me know if you need anything else."
+      ],
+      "context": ""
+    },
+    {
+      "tag": "how_can_i_help",
+      "patterns": [
+        "How can you help me?",
+        "What can you do?",
+        "How may you assist?",
+        "What services do you offer?",
+        "Tell me what you can help with",
+        "How can you be of assistance?",
+        "What information do you have?"
+      ],
+      "responses": [
+        "I can help you with menu items, current deals, restaurant locations, and more at McDonald's! What would you like assistance with?",
+        "I'm here to answer questions about our menu, deals, nearby locations, and general McDonald's information. How can I assist?",
+        "I can assist with finding menu items, explaining deals, locating restaurants, and more. Feel free to ask anything."
+      ],
+      "context": ""
+    }
+  ]
+}

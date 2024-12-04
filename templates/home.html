@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="{{url_for('static', filename = 'style.css')}}">
+    <meta charset="UTF-8">
+    <title>McAssist</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fff; /* Initial Light McDonald's yellow background */
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 85vh; /*Initial 100vh*/
+        }
+        .chatbox {
+            width: 290px;
+           /* background-color: #fff;
+            border: 2px solid red;  McDonald's red 
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            */
+        }
+        .chatbox__support {
+            display: flex; 
+            flex-direction: column;
+            justify-content: space-between;
+            height: 450px;
+
+            /* New additions for handling long text */
+            word-wrap: break-word; /* Ensures long words wrap */
+            overflow-y: auto;      /* Adds scroll if content exceeds height */
+            white-space: normal;   /* Allows text wrapping */
+        }
+        .chatbox__header {
+            background-color: red; /* McDonald's red */
+            color: #ffff00; /* McDonald's yellow text, Initial #ffff00 color yellow */
+            padding: 10px;
+            border-top-left-radius: 5px; /*initial 10px*/
+            border-top-right-radius: 5px; /*initial 10px*/
+            display: flex;
+            align-items: center;
+        }
+        .chatbox__image--header img {
+            width: 40px;
+            height: 40px;
+            margin-right: 10px;
+            border-radius: 50%;
+        }
+        .chatbox__heading--header {
+            font-size: 20px;
+            margin: 0;
+            color: #ff0000;
+        }
+        .chatbox__description--header {
+            margin: 0;
+            font-size: 14px;
+            color: #000000; /* Black text for interactive message */
+        }
+        .chatbox__messages {
+            padding: 10px;
+            flex-grow: 1;
+            background-color: #fff;
+            overflow-y: auto;
+        }
+        .chatbox__footer {
+            background-color: #f9f9f9;
+            padding: 5px;
+            border-bottom-left-radius: 5px; /*initial 10px*/
+            border-bottom-right-radius: 5px;
+            display: flex;
+            align-items: center;
+        }
+        .chatbox__footer input[type="text"] {
+            flex-grow: 1;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .chatbox__send--footer {
+            background-color: red;
+            color: yellow;
+            border: none;
+            padding: 8px 15px;
+            margin-left: 10px;
+            cursor: pointer;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+        .chatbox__send--footer:hover {
+            background-color: #cc0000; /* Darker red on hover */
+        }
+        .chatbox__button button {
+            background-color: #ff0000;
+            border: none;
+            border-radius: 50%;
+            padding: 10px; 
+            cursor: pointer;
+        }
+        .chatbox__button button img {
+            width: 30px; 
+            height: 30px;
+        }
+
+        /* Styling for the navigation bar */
+        nav {
+            background-color: #ffd700;
+            color: #333;
+            padding: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 1.2em;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        nav a, .nav-button {
+            color: #333;
+            text-decoration: none;
+            margin: 0 10px;
+            padding: 10px 15px;
+            transition: background-color 0.3s ease;
+            border-radius: 5px;
+            border: none;
+            cursor: pointer;
+        }
+
+        nav a:hover, .nav-button:hover {
+            background-color: #ffda66;
+        }
+
+        /* Welcome text styling */
+        nav span {
+            font-weight: bold;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar (Manually Adding Links/Buttons from base.html) -->
+    <nav>
+        <a href="{{ url_for('index') }}" class="nav-button">Home</a>
+        {% if session['user_id'] %}
+            <span>Welcome, {{ session['username'] }}</span>
+            <button onclick="location.href='{{ url_for('logout') }}'" class="nav-button">Logout</button>
+        {% else %}
+            <button onclick="location.href='{{ url_for('login') }}'" class="nav-button">Login</button>
+        {% endif %}
+    </nav>
+    <div style="width: 50%; float: left; padding: 20px; box-sizing: border-box; font-family: Arial, sans-serif; margin-bottom: 20px;"">
+        <main style="margin-bottom: 20px;">
+            {% block content %}
+            <h2 style="color: black; font-size: 28px; margin-bottom: 10px;">Welcome to McAssist</h2>
+            {% endblock %}
+            <h1 style="color: #000000; font-size: 24px; margin-bottom: 10px;">About Our Food</h1>
+            <p style="color: #333; font-size: 16px; line-height: 1.5; margin-bottom: 10px;">
+                From adding more balanced options to our Happy Meal, to serving up fresh beef Quarter Pounder burgers cooked when you order, 
+                we’re always finding ways to show our commitment to our customers and our food.
+            </p>
+            <a href="https://www.mcdonalds.com/us/en-us/about-our-food.html" target="_blank" 
+               style="display: inline-block; background-color: #ffd700; color: black; text-decoration: none; 
+                      padding: 10px 20px; border-radius: 5px; font-weight: bold; text-align: center; 
+                      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); transition: background-color 0.3s ease;">
+                Learn More
+            </a>
+            <h1 style="color: #000000; font-size: 24px; margin-top:20px; margin-bottom: 10px;">Contact Us</h1>
+            <p style="color: #333; font-size: 16px; line-height: 1.5; margin-bottom: 20px;">
+                Looking for nutrition information, employment details or want to contact us? Our team is happy to help you find answers.
+            </p>
+            <p style="color: #333; font-size: 16px; line-height: 1.5; margin-bottom: 10px;">
+            Have a question or feedback about a delivery order? First, check the Vendor Name to identify whether Uber Eats, DoorDash or Grubhub was handling your 			order, and please contact Uber Eats at: 1-866-987-3744, DoorDash at: 1-833-510-0332 or Grubhub at: 877-866-4482.
+            </p>
+            <a href="https://www.mcdonalds.com/us/en-us/feedback.html" target="_blank" 
+                style="display: inline-block; background-color: #ffd700; color: black; text-decoration: none; 
+                       padding: 10px 20px; border-radius: 5px; font-weight: bold; text-align: center; 
+                       box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); transition: background-color 0.3s ease;">
+                Contact Us
+            </a>
+        </main>
+    </div>
+    <div style="width: 50%; height: auto; float: right; padding: 20px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; overflow: hidden;">
+        <img src="./static/images/Right_img.png" alt="McDonald's Right Side Content" 
+             style="width: 100%; height: 50%; object-fit: contain; display: block; box-sizing: border-box;">
+    </div>       
+    <!-- Chatbox Section -->
+    <div class="container">
+        <div class="chatbox">
+            <div class="chatbox__support">
+                <div class="chatbox__header">
+                    <div class="chatbox__image--header">
+                        <img src="/static/images/McDLogo.png" alt="image">
+                    </div>
+                    <div class="chatbox__content--header">
+                        <h4 class="chatbox__heading--header">McAssist</h4>
+                        <p class="chatbox__description--header">Welcome! I'm here to assist you with any questions you have.</p>
+                    </div>
+                </div>
+                <div class="chatbox__messages">
+                    <div></div>
+                </div>
+                <div class="chatbox__footer">
+                    <input type="text" placeholder="Ask me something ...😊">
+                    <button class="chatbox__send--footer send__button">Send</button>
+                </div>
+            </div>
+            <div class="chatbox__button">
+                <button><img src="{{ url_for('static', filename='./images/McDicon.png') }}" /></button>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="{{ url_for('static', filename='app.js') }}"></script>
+</body>
+</html>
