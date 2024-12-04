@@ -108,7 +108,7 @@ def send_chat_history(user_id):
 
         # Create the email message
         msg = EmailMessage()
-        msg.set_content(f"Dear {user.full_name},\n\nThanks for chatting with us, we hope you're enjoying your experience with McAssist!\n\nHere is your chat history:\n{chat_text}\n\nBest regards,\nMcAssist Team")
+        msg.set_content(f"Dear {user.full_name},\n\nThanks for chatting with us, we hope you're enjoying your experience with McAssist!\n\nHere is your chat history:\n{chat_text}\nNote:Want to share your feedback? Simply click 'Reply' to this email and describe your feedback in up to 500 words. We'd love to hear your thoughts!\n\nBest regards,\nMcAssist Team")
         msg['Subject'] = 'Your McAssist Chat History'
         msg['From'] = 'muraharimmh@gmail.com'
         msg['To'] = user.email
