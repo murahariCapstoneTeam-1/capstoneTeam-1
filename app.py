@@ -1,3 +1,4 @@
+import os
 from flask import Flask, render_template, redirect, url_for, request, session, flash, jsonify
 from datetime import timedelta
 from chat import get_response  # here weare importing chatbot response function
