@@ -45,7 +45,7 @@ def register():
             flash("Emails do not match!", "danger")
             return redirect(url_for('register'))
 
-        new_user = User(full_name=full_name, mobile_number=mobile_number, email=email, password=password)
+        new_user = User(full_name=full_name, mobile_number=mobile_number, email=email, password=password) #ignore
         db.session.add(new_user)
         db.session.commit()
         flash("Registration successful! Please log in.", "success")
@@ -122,12 +122,12 @@ def send_chat_history(user_id):
         smtp_server = 'smtp.gmail.com'
         smtp_port = 587
         smtp_user = 'muraharimmh@gmail.com'
-        smtp_password = os.environ.get('SMTP_PASSWORD')  # Use environment variable for security
+        smtp_password = 'mpue unni czjl ibit'  # Use environment variable for security
 
         try:
             with smtplib.SMTP(smtp_server, smtp_port) as smtp:
                 smtp.starttls()
-                smtp.login(smtp_user, smtp_password)
+                smtp.login(smtp_user, smtp_password) # type: ignore
                 smtp.send_message(msg)
             print("Chat history sent successfully!")
         except Exception as e:
