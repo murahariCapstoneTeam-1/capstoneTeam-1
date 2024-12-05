@@ -10,7 +10,7 @@ class Chatbox {
         this.messages = []; // Array to store chat messages
         this.apiUrl = (window.location.hostname === '127.0.0.1' || window.location.hostname === 'localhost')
             ? 'http://127.0.0.1:5000/get_response'
-            : 'https://capstoneteam-1-4.onrender.com/get_response';
+            : 'https://capstoneteam-1.onrender.com/get_response';
     }
 
     display() {
