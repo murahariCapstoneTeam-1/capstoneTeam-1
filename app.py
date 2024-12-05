@@ -17,7 +17,7 @@ app.config['ENV'] = os.getenv('FLASK_ENV', 'development')
 if app.config['ENV'] == 'development':
     CORS(app, resources={r"/get_response": {"origins": "http://127.0.0.1:5000"}})
 else:
-    CORS(app, resources={r"/get_response": {"origins": "https://capstoneteam-1-4.onrender.com"}})
+    CORS(app, resources={r"/get_response": {"origins": "https://capstoneteam-1.onrender.com"}})
 
 app.secret_key = secrets.token_hex(16)
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///users.db'
