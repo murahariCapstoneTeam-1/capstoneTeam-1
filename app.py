@@ -1,4 +1,3 @@
-import os
 from flask import Flask, render_template, redirect, url_for, request, session, flash, jsonify
 from datetime import timedelta
 from chat import get_response  # here weare importing chatbot response function
@@ -134,5 +133,4 @@ def send_chat_history(user_id):
 if __name__ == '__main__':
     with app.app_context():
         db.create_all()  # Create the tables (ensure it only runs once)
-    port = int(os.environ.get("PORT", 5000))
-    app.run(debug=True, host='0.0.0.0', port=port)
+    app.run(debug=True)
